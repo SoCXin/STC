@@ -21,6 +21,8 @@ STC开发资源
 
 #### [software](https://github.com/mcuyun/STC/software) 
 
+#### [STC89C](https://github.com/mcuyun/STC89C) 
+
 ---
 
 ###  www.mcuyun.com  
