@@ -1,30 +1,19 @@
 ﻿# [STC](https://github.com/mcuyun/STC) 
+[![sites](SoC/qitas.png)](http://www.qitas.cn) 
+####  qitas@qitas.cn
+#### 归属：[8051](https://github.com/sochub/8051) 
 
-STC开发资源
+## [描述](https://github.com/sochub/STC/wiki) 
 
-[![sites](mcuyun/mcuyun.png)](http://www.mcuyun.com)
+STC是低成本高可靠性单片机的代表，价格秒杀同规格产品，单片机的各种外设齐全，包括UART/SPI/IIC和12bit ADC等
 
-#### [8051单片机](https://github.com/mcuyun/8051)
+### [资源组成](https://github.com/sochub/CH552)
 
----
-
-## [简介](https://github.com/mcuyun/STC/wiki) 
-
-
-包括STC设计开发的工具和资源
+- [文档](docs/)
+- [资源](src/)
+- [工程](project/)
+- [工具](tools/)
 
 
+###  [SoC开发平台](http://www.qitas.cn)   
 
-## 组成
-
-#### [hardware](https://github.com/mcuyun/STC/hardware) 
-
-#### [software](https://github.com/mcuyun/STC/software) 
-
-#### [STC89C](https://github.com/mcuyun/STC89C) 
-
----
-
-###  www.mcuyun.com  
-###  qitas@qitas.cn
-###  2018-12-3
