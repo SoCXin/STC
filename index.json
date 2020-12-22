@@ -1,45 +1,30 @@
 {
     "type":"MCU",
     "name":"SWM201",
-    "series":["SWM201DB","SWM201CB","SWM201RC","SWM201KC"],
+    "tags":["BLDC","motor"],
+    "series":["SWM201C6","SWM201G6"],
     "peripheral": ["ADC","LCDC","RTC","UART","I2C","SPI","PWM"],
-    "package":["LQFP64","LQFP48","LQFP32","QFN40"],
+    "package":["LQFP48","SSOP28"],
     "Core": {
         "num": 1,
         "architecture":"Cortex M0",
         "Freq":48
     },
-    "SWM201DB": {
-        "SRAM":16000,
-        "Flash":120000,
+    "SWM201C6": {
+        "SRAM":8000,
+        "Flash":32000,
         "package":"QFN40",
         "peripheral": ["ADC","TIM","PWM"],
-        "GPIO":28,
-        "price":2.8
+        "GPIO":43,
+        "price":4.8
     },
-    "SWM201CB": {
-        "SRAM":16000,
-        "Flash":120000,
-        "package":"LQFP48",
+    "SWM201G6": {
+        "SRAM":8000,
+        "Flash":32000,
+        "package":"SSOP28",
         "peripheral": ["ADC","TIM","PWM"],
-        "GPIO":28,
-        "price":2.8
-    },
-    "SWM201RC": {
-        "SRAM":16000,
-        "Flash":248000,
-        "package":"LQFP64",
-        "peripheral": ["ADC","TIM","PWM"],
-        "GPIO":28,
-        "price":2.8
-    },
-    "SWM201KC": {
-        "SRAM":16000,
-        "Flash":248000,
-        "package":"LQFP32",
-        "peripheral": ["ADC","TIM","PWM"],
-        "GPIO":28,
-        "price":2.8
+        "GPIO":25,
+        "price":4.3
     },
     "UART": {
         "num": 1,
@@ -48,6 +33,7 @@
     },
     "ADC": {
         "num": 1,
+        "type":"SAR",
         "channel": 10,
         "resolution": 12,
         "rate": 1024
@@ -64,10 +50,13 @@
         "accuracy": 0.02,
         "rate": 1024
     },
-    "RTC": {
-        "CLK": 32768,
-        "PPM": 1.5,
-        "Ivdd": 0.5
+    "OPA": {
+        "num": 3,
+        "rate": [5,10,15]
+    },
+    "CMP": {
+        "num": 4,
+        "rate": [5,10,15]
     },
     "PWR": {
         "VDD": [2500,5500],

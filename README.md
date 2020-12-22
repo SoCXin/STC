@@ -4,20 +4,21 @@
 
 #### [Vendor](https://github.com/SoCXin/Vendor) ：[Synwit](http://www.synwit.cn)
 #### [Core](https://github.com/SoCXin/Cortex)：[Cortex M0](https://github.com/SoCXin/CM0)
-#### [Level](https://github.com/SoCXin/Level)：48MHz
+#### [Level](https://github.com/SoCXin/Level)：60MHz
 
-[SWM201](https://github.com/SoCXin/SWM201) 在基于180出色的性能与高性价比高可靠性基础上进行了功能升级。在串口方面修改了UART，加入了校验位与停止位配置。MSB/LSB选择、自动、自动波特率矫正。同时降低了运行与睡眠功耗，增加了2.3V电压范围芯片上电时间不限，可以实现慢上电应用。可应用于工业控制、电机控制、 白色家电等多种领域。
+[SWM201](https://github.com/SoCXin/SWM201) 支持片上包含精度为 1%以内的 30MHz、60MHz 时钟，最高支持 60MHz 时钟输出。同时提供最大为 32K 字节的 FLASH 和最大 8K 字节的 SRAM。此外，芯片支持 ISP（在系统编程）操作及 IAP（在应用编程），用户可自定义 BOOT 程序。
 
-支持片上包含精度为 1%以内的 24MHz、 48MHz 时钟，并提供最大为 248K字节的 FLASH 和最大 24K 字节的 SRAM。此外，芯片支持 ISP（在系统编程）操作及 IAP（在应用编程），用户可自定义BOOT程序。
+SWM201 外设串行总线包括最多 2 个 UART 接口、1 个 I2C 接口（支持主/从选择），此外还具有 1 个 16 位看门狗定时器，1 个实时时钟（RTC）模块，2 组 24 位加强型定时器，4 组 24 位基础型定时器，2 路 4 通道（共 8 通道）16bit PWM，1 个除法器（DIV），1 个旋转坐标计算模块（CORDIC），1 个（最多 12 通道）通道 12bit、1MSPS 的逐次逼近型 ADC 模块，3 路运算放大器模块，4 路比较器模块，并提供欠压检测及低电压复位功能。
+
 
 [![sites](docs/SWM201.png)](http://www.synwit.cn/productInfo/68/index.html)
 
 #### 关键特性
 
 * CORDIC三角函数计算模块，可快速计算sin、cos等三角函数；
-* 16位高精度SIGMA-DELTA ADC，前置7级可编程增益，最大32倍；
-* CAN总线接口，支持DMA传输，最大速率1Mbit/s；
-* 4COM*32SEG SLCD模块，最大支持128段LCD显示屏。
+* 2 x OPA (5/10/15)
+* 4 x CMP
+* 1MSPS * 12bit ADC
 
 ### [资源收录](https://github.com/SoCXin)
 
